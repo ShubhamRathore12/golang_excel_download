@@ -18,5 +18,5 @@ services:
         sync: false
       - key: PORT
         value: "8080"
-    buildCommand: docker build -t export-api .
-    startCommand: docker run -p $PORT:8080 export-api
+    buildCommand: go build -o export-api main.go
+    startCommand: ./export-api
