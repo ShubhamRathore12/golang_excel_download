@@ -1,7 +1,7 @@
 services:
   - type: web
     name: export-api
-    env: docker
+    env: go
     plan: starter
     region: oregon
     healthCheckPath: /health
