@@ -7,15 +7,15 @@ services:
     healthCheckPath: /health
     envVars:
       - key: DB_HOST
-        sync: false
+        value: "myshaa.com"
       - key: DB_PORT
         value: "3306"
       - key: DB_USER
-        sync: false
+        value: "myshaa_kabu"
       - key: DB_PASSWORD
-        sync: false
+        value: "T-Cyj;f5g1y6"
       - key: DB_NAME
-        sync: false
+        value: "myshaa_kabu"
       - key: PORT
         value: "8080"
     buildCommand: go build -o export-api main.go
